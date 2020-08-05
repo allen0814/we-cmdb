@@ -1,0 +1,24 @@
+server:
+  port: 9080
+  address: localhost
+
+  spring:
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/wecmdb_dev?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+      username: root
+      password: luo@0814
+
+    jpa:
+      database: MySQL
+      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+      show-sql: false
+      hibernate:
+        ddl-auto: none
+
+  cmdb:
+    datasource:
+      schema: wecmdb_dev
+    security:
+      enabled: false
+      whitelist-ip-address: localhost
