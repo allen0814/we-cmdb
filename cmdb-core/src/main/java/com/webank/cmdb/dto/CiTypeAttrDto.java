@@ -7,7 +7,6 @@ import javax.validation.constraints.NotNull;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.google.common.base.MoreObjects;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.webank.cmdb.domain.AdmCiTypeAttr;
 import com.webank.cmdb.util.DtoField;
 import com.webank.cmdb.util.DtoId;

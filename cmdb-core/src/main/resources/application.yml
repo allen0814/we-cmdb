@@ -16,9 +16,9 @@ spring:
       spec: expireAfterWrite=30s
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://db-server:3306/db_schema?characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: db_user
-    password: db_password
+    url: jdbc:mysql://localhost:3306/wecmdb_dev?characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: luo@0814
   jpa:
     database: MySQL
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
@@ -28,7 +28,7 @@ spring:
 
 cmdb:
   datasource:
-    schema: db_user
+    schema: wecmdb_dev想·
 
   security:
     enabled: false

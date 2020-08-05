@@ -1,6 +1,5 @@
 package com.webank.cmdb.expression;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.webank.cmdb.constant.FilterOperator;
 import com.webank.cmdb.dto.AdhocIntegrationQueryDto;
 import com.webank.cmdb.dto.Filter;

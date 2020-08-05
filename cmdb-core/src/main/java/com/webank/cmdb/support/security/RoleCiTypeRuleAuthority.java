@@ -13,8 +13,8 @@ import com.google.common.collect.Maps;
 import com.webank.cmdb.domain.AdmRoleCiTypeCtrlAttr;
 import com.webank.cmdb.support.exception.CmdbException;
 
-import io.jsonwebtoken.lang.Collections;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections.CollectionUtils;
 
 @Slf4j
 class RoleCiTypeRuleAuthority implements Authority {
@@ -68,7 +68,7 @@ class RoleCiTypeRuleAuthority implements Authority {
             if (isNotEmpty(conditionMatchers)) {
                 for (RoleCiTypeRuleConditionMatcher conditionMatcher : conditionMatchers) {
                     Set matchedData = conditionMatcher.getMatchedData();
-                    if(!Collections.isEmpty(matchedData)) {
+                    if(!CollectionUtils.isEmpty(matchedData)) {
                         permittedData.put(conditionMatcher.getPropertyName(), matchedData);
                     }
                 }

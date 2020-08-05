@@ -18,7 +18,7 @@
 
 	<artifactId>cmdb</artifactId>
 	<groupId>com.webank.cmdb</groupId>
-	<version>${cmdb.version}</version>
+	<version>1.5.0</version>
 	<packaging>pom</packaging>
 
 	<build>
@@ -26,11 +26,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-					<encoding>${project.build.sourceEncoding}</encoding>
-				</configuration>
+				<version>3.8.0</version>
 			</plugin>
 		</plugins>
 	</build>

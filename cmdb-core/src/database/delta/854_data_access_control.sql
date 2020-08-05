@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS `adm_role_ci_type_ctrl_attr_expression` (
   `id_adm_role_ci_type_ctrl_attr_condition` int(11) DEFAULT NULL,
   `expression` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id_adm_role_ci_type_ctrl_attr_expression`),
-  KEY `id_adm_role_ci_type_attr_condition` (`id_adm_role_ci_type_ctrl_attr_condition`),
+  KEY `id_adm_role_ci_type_attr_condition` (`id_adm_role_ci_type_ctrl_attr_condition`)x,
   CONSTRAINT `id_adm_role_ci_type_attr_condition` FOREIGN KEY (`id_adm_role_ci_type_ctrl_attr_condition`) REFERENCES `adm_role_ci_type_ctrl_attr_condition` (`id_adm_role_ci_type_ctrl_attr_condition`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
