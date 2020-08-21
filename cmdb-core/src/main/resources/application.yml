@@ -28,7 +28,7 @@ spring:
 
 cmdb:
   datasource:
-    schema: wecmdb_dev想·
+    schema: wecmdb_dev
 
   security:
     enabled: false
